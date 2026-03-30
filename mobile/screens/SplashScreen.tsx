@@ -1,4 +1,4 @@
-import { Animated, Dimensions, Text, View } from "react-native";
+import { Animated, Text } from "react-native";
 import React, { useEffect, useRef } from "react";
 import { Colors } from "@/constants/Colors";
 import { fontSizes, windowHeight, windowWidth } from "@/themes/app.constant";
@@ -13,6 +13,8 @@ const SplashScreen = () => {
       duration: 800,
       useNativeDriver: true,
     }).start();
+
+    // eslint-disable-next-line
   }, []);
 
   return (
